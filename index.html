@@ -14,21 +14,13 @@
     <h2>Github App</h2>
   </header>
   <section class="search">
-    <h2 class="search-perfil">Perfil GitHub</h2>
+    <img class="search-perfil" src="build/img/github-logo.png">
     <div class="search-box">
-      <input class="search-input" type="text" name="username" placeholder="Digite o username">
-      <button class="search-button" type="button" name="button">Procurar</button>
+      <input class="search-input" data-js="input" type="text" name="username" placeholder="Digite o username">
+      <button class="search-button" data-js="button" type="button" name="button">Procurar</button>
     </div>
   </section>
-  <section class="response">
-    <img class="response-image" src="https://avatars3.githubusercontent.com/u/9556697?v=3" alt="">
-    <div class="response-content">
-      <label class="response-label"><span class="response-span">Nome: </span>Samuel</label>
-      <label class="response-label"><span class="response-span">Repositórios: </span>07</label>
-      <label class="response-label"><span class="response-span">Desde: </span>2016</label>
-      <a class="response-url" href="#">Ir no perfil</a>
-    </div>
-  </section>
+  <section class="response" data-js="response"></section>
   <footer class="footer">
     <p>Copyright 2017</p>
   </footer>
