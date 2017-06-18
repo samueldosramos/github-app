@@ -1,0 +1,28 @@
+.response {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .response-image {
+    width: 250px;
+    margin-right: 10px;
+  }
+}
+
+.response-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  line-height: 45px;
+  .response-span {
+    font-weight: bold;
+  }
+  .response-url {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: green;
+    }
+  }
+}
