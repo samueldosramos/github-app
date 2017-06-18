@@ -5,11 +5,12 @@ import sass from 'gulp-sass'
 import plumber from 'gulp-plumber'
 import concat from 'gulp-concat'
 import babel from 'gulp-babel'
+import imagemin from 'gulp-imagemin'
 const browserSync = require('browser-sync').create()
 
 const dir = {
   src: 'src',
-  dest: 'build'
+  dest: 'assets'
 }
 
 gulp.task('browser-sync', () => {
@@ -31,7 +32,7 @@ gulp.task('sass', () => {
 })
 
 gulp.task('image', () => {
-  gulp.src(`${dir.src}/images/**/*.{jpg, png, gif}`)
+  return gulp.src(`${dir.src}/images/**/*.{jpg, png, gif}`)
   .pipe(gulp.dest(`${dir.dest}/img/`))
 })
 
