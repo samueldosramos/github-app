@@ -1,0 +1,31 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+  .search-perfil {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  .search-box {
+    display: flex;
+    .search-input {
+      font-size: 1em;
+      width: 240px;
+      padding: 10px 20px;
+    }
+    .search-button {
+      padding: 10px 20px;
+      cursor: pointer;
+      transition-delay: .3s;
+      color: white;
+      border: none;
+      background-color: dimgrey;
+      &:hover {
+        background-color: green;
+      }
+    }
+  }
+}
