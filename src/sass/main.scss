@@ -1,4 +1,12 @@
+// General Dependencies
 @import 'variables';
+
+// Base
+@import 'reset';
+
+// Areas
 @import 'header';
 @import 'footer';
-@import 'reset'
+
+// Patterns
+@import 'search';
