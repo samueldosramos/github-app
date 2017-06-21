@@ -16,5 +16,5 @@ buttonSearch.addEventListener('click', function () {
 });
 
 function templateResponse(avatar, name, repository, created, url) {
-  return '<img class="response-image" src="' + avatar + '" alt="' + name + '">\n    <div class="response-content">\n      <label class="response-label"><span class="response-span">Nome: </span>' + name + '</label>\n      <label class="response-label"><span class="response-span">Reposit\xF3rios: </span>' + repository + '</label>\n      <label class="response-label"><span class="response-span">Desde: </span>' + created + '</label>\n      <button class="response-url" href="' + url + '">Ir no perfil</button>\n    </div>';
+  return '<img class="response-image" src="' + avatar + '" alt="' + name + '">\n    <div class="response-content">\n      <label class="response-label"><span class="response-span">Nome: </span>' + name + '</label>\n      <label class="response-label"><span class="response-span">Reposit\xF3rios: </span>' + repository + '</label>\n      <label class="response-label"><span class="response-span">Desde: </span>' + created + '</label>\n      <button class="response-url" onclick=location.href="' + url + '" target="_parent"> Ir no perfil </button>\n    </div>';
 }
