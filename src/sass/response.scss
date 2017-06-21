@@ -6,7 +6,8 @@
   align-items: center;
   .response-image {
     width: 250px;
-    margin-right: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
   }
 }
 
@@ -19,10 +20,19 @@
     font-weight: bold;
   }
   .response-url {
-    text-decoration: none;
-    color: black;
-    &:hover {
-      color: green;
-    }
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 130px;
+  cursor: pointer;
+  transition-delay: .2s;
+  color: $font-color;
+  font-size: 0.7em;
+  font-family: $font-button;
+  border: none;
+  background-color: $button-color;
+  border-radius: 10px;
+  &:hover {
+    background-color: $accent-color;
+  }
   }
 }

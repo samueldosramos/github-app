@@ -18,6 +18,6 @@ function templateResponse(avatar, name, repository, created, url) {
       <label class="response-label"><span class="response-span">Nome: </span>${name}</label>
       <label class="response-label"><span class="response-span">Repositórios: </span>${repository}</label>
       <label class="response-label"><span class="response-span">Desde: </span>${created}</label>
-      <a class="response-url" href="${url}">Ir no perfil</a>
+      <button class="response-url" href="${url}">Ir no perfil</button>
     </div>`
 }
